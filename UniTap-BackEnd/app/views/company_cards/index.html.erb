@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Company Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Cardhash</th>
+      <th>Phonecrc</th>
+      <th>Activity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @company_cards.each do |company_card| %>
+      <tr>
+        <td><%= company_card.userid %></td>
+        <td><%= company_card.cardhash %></td>
+        <td><%= company_card.phonecrc %></td>
+        <td><%= company_card.activity %></td>
+        <td><%= link_to 'Show', company_card %></td>
+        <td><%= link_to 'Edit', edit_company_card_path(company_card) %></td>
+        <td><%= link_to 'Destroy', company_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company card', new_company_card_path %>

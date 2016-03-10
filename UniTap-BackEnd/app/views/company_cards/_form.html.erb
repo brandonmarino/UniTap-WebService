@@ -1,0 +1,33 @@
+<%= form_for(@company_card) do |f| %>
+  <% if @company_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@company_card.errors.count, "error") %> prohibited this company_card from being saved:</h2>
+
+      <ul>
+      <% @company_card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :userid %><br>
+    <%= f.number_field :userid %>
+  </div>
+  <div class="field">
+    <%= f.label :cardhash %><br>
+    <%= f.text_field :cardhash %>
+  </div>
+  <div class="field">
+    <%= f.label :phonecrc %><br>
+    <%= f.number_field :phonecrc %>
+  </div>
+  <div class="field">
+    <%= f.label :activity %><br>
+    <%= f.number_field :activity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

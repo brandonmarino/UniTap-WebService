@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @company_card.userid %>
+</p>
+
+<p>
+  <strong>Cardhash:</strong>
+  <%= @company_card.cardhash %>
+</p>
+
+<p>
+  <strong>Phonecrc:</strong>
+  <%= @company_card.phonecrc %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @company_card.activity %>
+</p>
+
+<%= link_to 'Edit', edit_company_card_path(@company_card) %> |
+<%= link_to 'Back', company_cards_path %>
