@@ -1327,3 +1327,4 @@ Started GET "/" for ::1 at 2016-03-09 20:33:32 -0500
 Processing by PageController#home as HTML
   Rendered page/home.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 558ms (Views: 538.6ms | ActiveRecord: 0.0ms)
+
