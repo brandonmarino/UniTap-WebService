@@ -1,2 +1,11 @@
+To Add:
 curl -i -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"userid":66}' http://localhost:3000/api/company_cards
 
+To Delete:
+curl -i -H "Accept: application/json" -H "Content-type: application/json" -X DELETE http://localhost:3000/api/company_cards/1
+
+To Update:
+curl -i -H "Accept: application/json" -H "Content-type: application/json" -X PUT -d "{\"userid\":67}" http://localhost:3000/api/company_cards/4
+
+To Find Information:
+curl -i -H "Accept: application/json" -H "Content-type: application/json" -X GET http://localhost:3000/api/company_cards/4
