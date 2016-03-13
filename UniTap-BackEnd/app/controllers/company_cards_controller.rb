@@ -64,14 +64,18 @@ class CompanyCardsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_company_card
-      #if(params)
-      @company_card = CompanyCard.find(params[:id])
+      if(params[:id].exists?)
+        @company_card = CompanyCard.find(params[:id])
+      else(params[:cardhash].exists?)
+        if(params[:phonecrc].exists?)
+          @company_card = CompanyCard.find_by(cardhash: params[:cardhash], phonecrc: params[:phonecrc])
+        end
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_card_params
-      params.require(:company_card).permit(:userid, :cardhash, :phonecrc, :activity)
-      #params.require(:company_card).permit(:userid, :cardhash, :phonecrc, :activity)
-    
+      #params.require(:company_card).permit(:cardhash, :phonecrc, :activity)
+      params.permit(:company_card, :cardhash, :phonecrc)
     end
 end
