@@ -10,3 +10,8 @@ Milestone 1:
   - Integrated Circle CI
   - Set up Heroku
   - Pushed project to heroku
+
+Milestone 2:
+  - Set up the website with a login feature
+  - Set up the user database
+  - Built a RESTful API to accomodate requests from the front-end service
