@@ -217,3 +217,303 @@ Processing by PageController#userinfo as HTML
   Rendered page/userinfo.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
   [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (18.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (40.9ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (50.0ms)[0m  DELETE FROM "users"
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 1004ms (Views: 1003.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.5ms)[0m  DELETE FROM "users"
+  [1m[36m (18.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 556ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (11.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "users"
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 443ms (Views: 442.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "users"
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1272ms (Views: 1271.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "users"
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 543ms (Views: 543.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "users"
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 666ms (Views: 665.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "users"
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (27.8ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 619ms (Views: 619.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "users"
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 762ms (Views: 761.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "users"
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 738ms (Views: 737.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (27.5ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "users"
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+PageControllerTest: test_should_get_aboutus
+-------------------------------------------
+Processing by PageController#aboutus as HTML
+  Rendered page/aboutus.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 478ms (Views: 477.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+PageControllerTest: test_should_get_home
+----------------------------------------
+Processing by PageController#home as HTML
+  Rendered page/home.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------
+PageControllerTest: test_should_get_userinfo
+--------------------------------------------
+Processing by PageController#userinfo as HTML
+  Rendered page/userinfo.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  ROLLBACK

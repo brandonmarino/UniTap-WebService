@@ -1,29 +1,33 @@
+<center>
+<body style="background-color:lightgrey;">
+<h1 style="color:#4099FF">Welcome to UniTap Web Application!!</h1>
+</center>
 
-<body style="background-color:darkgrey;">
-<h1 style="color:darkred">Welcome to UniTap Web Application!!</h1>
+<% if user_signed_in? ==false%>
+<h2 style="color:#4099FF" >
+    To sign up in our service 
+    <%= link_to "Sign Up",  "/users/sign_up" %>
+   </h2>
 
-<h2 style="color:darkred" >
-  to sign up in our service 
-   <%= link_to "Sign Up", "users/sign_up" %>
-</h2>
-
-<h2 style="color:darkred" >
+<h2 style="color:#4099FF" >
   to log in our service 
-   <%= link_to "Log in", "users/sign_in" %>
+   <%= link_to "Log in", "/users/sign_in" %>
 </h2>
+  <%end%>
 
-<p1 style="color:darkred" >
-  to sign out  
-   <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-</p1>
+<h2 style="color:#4099FF" >
   
- <h2 style="color:darkred"> 
+  <% if user_signed_in? %>
+  To Access you cards <%= link_to "My Cards", "/page/userinfo" %>
+  </h2>
+   <h2 style="color:#4099FF">To sign out  
+  <%= link_to "Sign out",  destroy_user_session_path, :method => :delete %>
+  <%end%>
+</h2>
+  
+ <h2 style="color:#4099FF"> 
    To find about us
-  <%= link_to "About Us", "page/aboutus" %>
+  <%= link_to "About Us", "/page/aboutus" %>
 </h2>
 
 </body>
-
-
-
-
