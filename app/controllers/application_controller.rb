@@ -7,4 +7,10 @@ def hello
 	render text: "hello world!!!!!"
 end
 
+     #the path used after user signs in (takes them to useinfo page)
+   def after_sign_in_path_for(resource) 
+     '/page/userinfo'
+  end 
+
+
 end
