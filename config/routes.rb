@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 #  devise_for :users
 
   # routes.rb
-devise_for :users, controllers: { registrations: 'users/registrations', passwords: 'users/passwords' }
+devise_for :users, controllers: { registrations: 'users/registrations' }
 
 
   get 'page/home'
