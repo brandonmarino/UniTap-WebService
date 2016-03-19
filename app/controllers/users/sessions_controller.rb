@@ -20,7 +20,7 @@ class Users::SessionsController < Devise::SessionsController
 
      #the path used after user signs in (takes them to useinfo page)
    def after_sign_in_path_for(resource) 
-     '/page/userinfo'
+     '/cards'
   end 
 
   # If you have extra params to permit, append them to the sanitizer.
