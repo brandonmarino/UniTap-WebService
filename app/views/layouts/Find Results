@@ -1,0 +1,45 @@
+Searching 252 files for "userinfo"
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/app/controllers/page_controller.rb:
+    9    end
+   10  
+   11:   def userinfo
+   12    end
+   13  
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/app/controllers/users/registrations_controller.rb:
+   51    # The path used after sign up.
+   52     def after_sign_up_path_for(resource)
+   53:      '/cards'
+   54     end
+   55  
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/app/controllers/users/sessions_controller.rb:
+   21       #the path used after user signs in (takes them to useinfo page)
+   22     def after_sign_in_path_for(resource) 
+   23:      '/cards'
+   24    end 
+   25  
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/config/routes.rb:
+   12    get 'page/aboutus'
+   13  
+   14:   get 'page/userinfo'
+   15  
+   16    #get 'page/signup'
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/log/development.log:
+    <binary>
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/log/test.log:
+    <binary>
+
+/Users/roma4ever-10/Desktop/SYSC4806/project/UniTap-WebService/test/controllers/page_controller_test.rb:
+   14    end
+   15  
+   16:   test "should get userinfo" do
+   17:     get :userinfo
+   18      assert_response :success
+   19      assert_select "title", "UniTap Web Service" 
+
+55 matches across 7 files
