@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  companyid: 1
+  company: MyString
 
 two:
   name: MyString
-  companyid: 1
+  company: MyString

@@ -19,7 +19,7 @@
 <h2 style="color:#4099FF" >
   
   <% if user_signed_in? %>
-  To Access you cards <%= link_to "My Cards", "/page/userinfo" %>
+  To access your cards <%= link_to "My Cards", "/cards" %>
   </h2>
    <h2 style="color:#4099FF">To sign out  
   <%= link_to "Sign out",  destroy_user_session_path, :method => :delete %>

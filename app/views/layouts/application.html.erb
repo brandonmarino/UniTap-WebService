@@ -17,7 +17,7 @@
             <li><%= link_to "Log in", "/users/sign_in" %></li>
             <%end%>
             <% if user_signed_in? %>
-            <li><%= link_to "My Cards", "/page/userinfo" %></li>
+            <li><%= link_to "My Cards", "/cards" %></li>
             <li><%= link_to "Sign out",  destroy_user_session_path, :method => :delete %></li>
             <%end%>
 

@@ -1,6 +1,7 @@
 class Card < ActiveRecord::Base
-	has_one :name
-	has_one :companyname
-	has_one :cardid
 	belongs_to :user
+
+	validates :user_id, presence: true
+
+	validates :name, length: {minimum: 2}, presence: true
 end
