@@ -57,23 +57,49 @@ class Api::CompanyCardsController < ApplicationController
   # Create a new card for the company's database
   #
   def create
-    if (params[:cardhash].nil?) || (params[:phonecrc].nil?)
-      render status: 422, json: {
-        message: "Card format incorrect.",
-      }.to_json
-    else
-      card = CompanyCard.new(card_params)
-      if card.save
+    if !(params[:cardhash].nil? || params[:phonecrc].nil?)
+      if !(CompanyCard.find_by(cardhash: params[:cardhash], phonecrc: params[:phonecrc]).nil?)
         render status: 200, json: {
-          message: "Successfully created new Company-Card.",
-          company_cards: card
-        }.to_json
+          message: "Welcome to our business!"
+        }
       else
         render status: 422, json: {
-       	  message: "Unable to process your request of the server."
+          message: "Request Denied."
+        }
+      end
+    elsif !(params[:id].nil?)
+      if(CompanyCard.exists?(params[:id]))
+        card = CompanyCard.find(params[:id])
+        render status: 200, json: {
+          company_cards: card
         }.to_json
-  	  end
+      end
+    elsif !(params[:cardhash].nil?) || !(params[:phonecrc].nil?)
+      render status: 422, json:{
+        message: "Your request makes no sense."
+      }
+    else
+      render status: 200, json: CompanyCard.all
+
     end
+    #if (params[:cardhash].nil?) || (params[:phonecrc].nil?)
+    #  render status: 422, json: {
+    #    message: "Card format incorrect.",
+    #  }.to_json
+    #else
+    #  card = CompanyCard.new(card_params)
+    #  if card.save
+    #    render status: 200, json: {
+    #      message: "Successfully created your card.",
+    #      company_cards: card
+    #    }.to_json
+    #  else
+    #    render status: 422, json: {
+    #   	  message: "Unable to process your request of the server."
+    #    }.to_json
+  	#  end
+    #end
+
   end
 
   ##
@@ -128,6 +154,6 @@ class Api::CompanyCardsController < ApplicationController
   #
   private
   def card_params
-    params.permit(:company_card, :cardhash, :phonecrc)
+    params.permit(:company_card, :userid, :cardhash, :phonecrc)
   end
 end
