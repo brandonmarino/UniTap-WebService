@@ -1,0 +1,30 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+body {
+    background-color: white;
+}
+
+h1 {
+    color: #4169E1;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+h2 {
+    color: #4169E1;
+    font-family: verdana;
+    font-size: 160%;
+}
+
+h3 {
+    color: black;
+    font-family: verdana;
+    font-size: 100%;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}

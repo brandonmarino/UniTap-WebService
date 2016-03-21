@@ -1,15 +1,16 @@
-<body style="background-color:darkgrey;">
-<h2 style="color:darkred">Sign up to UniTap Web Application</h2>
+<body style="background-color:white;">
+<center>
+<h2 style="color:#4169E1">Sign up to UniTap Web Application</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div style="color:darkred" class="field">
+  <div style="color:#4169E1" class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div style="color:darkred" class="field">
+  <div style="color:#4169E1" class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -17,15 +18,16 @@
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div style="color:darkred" class="field">
+  <div style="color:#4169E1" class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div style="color:darkred" class="actions">
+  <div style="color:#4169E1" class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</center>
 </body>
