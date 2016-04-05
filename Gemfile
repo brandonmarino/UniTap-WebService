@@ -34,7 +34,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Use devise gem to have users 
 gem 'devise'
+#adding parse gem
+gem "parse-ruby-client"
+#to consume the RESTful API , we need to use this gem 
+gem 'httparty', '~> 0.13.7'
 
+#adding our gem 
+#gem "unitapapi"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platform: [:ruby_20]

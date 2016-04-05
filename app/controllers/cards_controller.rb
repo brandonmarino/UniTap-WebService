@@ -1,11 +1,26 @@
 class CardsController < ApplicationController
+  require "httparty"
+  include HTTParty
   before_action :set_card, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+ base_uri "localhost:3000"
+
+
+    
+  def showcard
+  #@backend = self.class.get("/api/company_cards/1.json").parsed_response
+  #puts @backend
+  
+end 
+
 
   # GET /cards
   # GET /cards.json
   def index
     @cards = current_user.cards
+    @response = self.class.get("/api/company_cards/2.json").parsed_response
+    #puts @response.body, response.code, response.message, response.headers.inspect
+    
   end
 
   # GET /cards/1
