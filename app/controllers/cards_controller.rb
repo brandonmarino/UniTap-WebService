@@ -18,7 +18,7 @@ end
   # GET /cards.json
   def index
     @cards = current_user.cards
-    @response = self.class.get("/api/company_cards/2.json").parsed_response
+    @response = self.class.get("/api/company_cards/1.json").parsed_response
     #puts @response.body, response.code, response.message, response.headers.inspect
     
   end
